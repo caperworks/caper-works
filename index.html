@@ -1,42 +1,72 @@
 <!DOCTYPE html>
-
-<!--
-	Template:   Hektor - Creative Agency and Portfolio HTML Website Template
-	Author:     Themetorium
-	URL:        https://themetorium.net/
--->
-
 <html lang="en">
 	<head>
 
 		<!-- Title -->
-		<title>Caper Works | Creative Agency</title>
+		<title>Caper Works | Website Design &amp; Development Company in Jaipur</title>
 
 		<!-- Meta -->
 		<meta charset="utf-8">
-		<meta name="description" content="Caper Works — creative agency crafting engaging digital experiences. View our portfolio and get in touch.">
+		<meta name="description" content="Caper Works is a Jaipur web design and development studio. We build business websites, ad landing pages, D2C brand websites and custom tools for schools. 56+ websites delivered.">
 		<meta name="author" content="Caper Works">
 		<link rel="canonical" href="https://caperworks.com/">
 
 		<!-- Mobile Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#e9e6de">
+
+		<!-- Open Graph / social sharing -->
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Caper Works">
+		<meta property="og:title" content="Caper Works | Websites, Landing Pages &amp; Tools That Grow Your Business">
+		<meta property="og:description" content="Jaipur design and development studio. Business websites, ad landing pages, D2C brand websites and custom tools. 56+ websites delivered.">
+		<meta property="og:url" content="https://caperworks.com/">
+		<meta property="og:image" content="https://caperworks.com/assets/Logos/cp-black.png">
+		<meta name="twitter:card" content="summary">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="assets/Logos/CP Favicon.png" type="image/png">
-		<link rel="icon" href="assets/Logos/CP Favicon.png" type="image/png">
+		<link rel="icon" href="assets/Logos/cp-favicon.png" type="image/png">
+		<link rel="apple-touch-icon" href="assets/Logos/cp-favicon.png">
 
-		<!-- Your Google Analytics code goes here -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-E0SM74NZNG"></script>
-		<script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],("themetorium.net"===window.location.hostname||window.location.hostname.endsWith(".themetorium.net"))&&(gtag("js",new Date),gtag("config","G-E0SM74NZNG"));</script>
+		<!-- Structured data -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "ProfessionalService",
+			"name": "Caper Works",
+			"url": "https://caperworks.com/",
+			"logo": "https://caperworks.com/assets/Logos/cp-black.png",
+			"image": "https://caperworks.com/assets/Logos/cp-black.png",
+			"description": "Web design and development studio in Jaipur building business websites, ad landing pages, D2C brand websites and custom tools for schools and institutes.",
+			"telephone": "+91-92564-49413",
+			"email": "hello@caperworks.com",
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "III, A-10, Mohru Nagar, Manyawas, Mansarovar",
+				"addressLocality": "Jaipur",
+				"addressRegion": "Rajasthan",
+				"postalCode": "302020",
+				"addressCountry": "IN"
+			},
+			"areaServed": "IN",
+			"sameAs": ["https://instagram.com/caper.works"]
+		}
+		</script>
+
+		<!--
+			Analytics: add your own Google Analytics 4 ID and Meta Pixel here.
+			The previous tag (G-E0SM74NZNG) belonged to the theme author and only ran on their domain, so caperworks.com had no analytics.
+			Once gtag / fbq are loaded, assets/js/site.js automatically sends a "contact_click" event for every WhatsApp, call and email click.
+		-->
 
 		<!-- Google fonts (https://fonts.google.com/) -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:wght@200..700&display=swap" rel="stylesheet"> <!-- Body font -->
+		<link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:wght@200..700&display=swap" rel="stylesheet">
 
 		<!-- Libs and Plugins CSS -->
-		<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css"> <!-- Font Icons CSS (https://fontawesome.com) Free version! -->
-		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css"> <!-- Swiper CSS (https://swiperjs.com/) -->
+		<link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+		<link rel="stylesheet" href="assets/vendor/swiper/css/swiper-bundle.min.css">
 
 		<!-- Master CSS -->
 		<link rel="stylesheet" href="assets/css/helper.css">
@@ -45,92 +75,50 @@
 
 	</head>
 
-	
-	<!-- ===========
-	///// Body /////
-	================
-	* Use class "tt-transition" to enable page transitions.
-	* Use class "tt-smooth-scroll" to enable page smooth scroll. 
-	* Use class "tt-dark-mode-default" to enable dark style by default (you must clear your browser's cookies and cache first!).
-	* Note: there may be classes that are specific to this page only!
-	* IMPORTANT: If you use your own background pattern, ensure it doesn't create excessive contrast with the rest of the page elements. A background pattern works best if it's transparent, barely noticeable, and doesn't confuse website visitors. If you don't want to use it, just remove the "style" attribute.
-	-->
 	<body id="body" class="tt-transition tt-smooth-scroll">
 
-
-		<!-- *************************************
-		*********** Begin body inner ************* 
-		************************************** -->
 		<main id="body-inner">
 
-			<!-- Begin page transition (do not remove!!!) 
-			=========================== -->
+			<!-- Page transition (do not remove) -->
 			<div id="tt-page-transition">
 				<div class="tt-ptr-overlay-top"></div>
 				<div class="tt-ptr-overlay-bottom"></div>
 				<div class="tt-ptr-preloader">
 					<div class="tt-ptr-prel-content">
-						<!-- Hint: You may need to change the img height and opacity to match your logo type. You can do this from the "theme.css" file (find: ".tt-ptr-prel-image"). -->
-						<img src="assets/Logos/CP black.png" class="tt-ptr-prel-image" alt="Caper Works">
-					</div> <!-- /.tt-ptr-prel-content -->
-				</div> <!-- /.tt-ptr-preloader -->
+						<img src="assets/Logos/cp-black.png" class="tt-ptr-prel-image" alt="Caper Works">
+					</div>
+				</div>
 			</div>
-			<!-- End page transition --> 
 
+			<div id="tt-content-wrap">
 
-			
-			<!-- *************************************
-			*********** Begin content wrap *********** 
-			************************************** -->
-			<div id="tt-content-wrap"> <!-- Also used for GSAP ScrollSmoother (https://gsap.com/docs/v3/Plugins/ScrollSmoother/) -->
-
-
-				<!-- ===================
-				///// Begin header /////
-				========================
-				* Use class "tt-header-scroll" to hide header on scroll down and show on scroll up.
-				* Use class "tt-header-fixed" to set header to fixed position (no effect with class "tt-header-scroll").
-				* Use class "tt-header-filled" to add background color to header on scroll (effect only with class "tt-header-scroll" and "tt-header-fixed").
-				* Use class "tt-header-alter" to enable alternative layout (for desktop only!).
-				-->
+				<!-- ===== Header ===== -->
 				<header id="tt-header" class="tt-header-alter tt-header-fixed tt-header-filled">
-					<div class="tt-header-inner"> 
+					<div class="tt-header-inner">
 
 						<div class="tt-header-col tt-header-col-left">
-
-							<!-- Begin logo 
-							================ 
-							Hint: You may need to change the img height to match your logo type. You can do this from the "theme.css" file (find: ".tt-logo img").
-							-->
-							<div class="tt-logo"> 
-								<a href="index.html">
-									<img src="assets/Logos/CP black.png" class="tt-logo-dark" alt="Caper Works">
+							<div class="tt-logo">
+								<a href="/">
+									<img src="assets/Logos/cp-black.png" class="tt-logo-dark" alt="Caper Works">
 								</a>
 							</div>
-							<!-- End logo -->
-
-						</div> <!-- /.tt-header-col -->
+						</div>
 
 						<div class="tt-header-col tt-header-col-center">
-
-							<!-- Begin main menu (classic)
-							===============================
-							* Use class "tt-m-menu-center" to align mobile menu to center.
-							-->
 							<nav class="tt-main-menu tt-m-menu-center">
 								<div class="tt-main-menu-holder">
 									<div class="tt-main-menu-inner">
 										<div class="tt-main-menu-content">
 
 											<div class="tt-m-menu-nav">
-												<!-- Begin main menu list -->
 												<ul class="tt-main-menu-list">
-													<li><a href="#services">What we Do</a></li>
-													<li><a href="#work">Our Work</a></li>
-													<li><a href="#process">Our Process</a></li>
+													<li><a href="#services">Services</a></li>
+													<li><a href="#tools">Tools</a></li>
+													<li><a href="#work">Work</a></li>
+													<li><a href="#process">Process</a></li>
+													<li><a href="#faq">FAQ</a></li>
 												</ul>
-												<!-- End main menu list -->
-												<a href="https://wa.me/919256449413" class="tt-btn tt-btn-primary tt-m-menu-cta hide-to-xlg" target="_blank" rel="noopener">
+												<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project." class="tt-btn tt-btn-primary tt-m-menu-cta hide-to-xlg" target="_blank" rel="noopener">
 													<span>Let's Talk</span>
 													<span class="tt-btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
 												</a>
@@ -159,74 +147,60 @@
 												</div>
 											</div>
 
-										</div> <!-- /.tt-main-menu-content -->
-									</div> <!-- /.tt-main-menu-inner -->
-								</div> <!-- /.tt-main-menu-holder -->
-
-							</nav> 
-							<!-- End main menu -->
+										</div>
+									</div>
+								</div>
+							</nav>
 
 							<a href="https://instagram.com/caper.works" class="tt-header-social hide-from-xlg" target="_blank" rel="noopener" aria-label="Caper Works on Instagram">
 								<i class="fa-brands fa-instagram" aria-hidden="true"></i>
 							</a>
-
-						</div> <!-- /.tt-header-col -->
+						</div>
 
 						<div class="tt-header-col tt-header-col-right">
-
-							<!-- Begin mobile menu toggle button (for "tt-main-menu") --> 
 							<div id="tt-m-menu-toggle-btn-wrap">
 								<div class="tt-m-menu-toggle-btn-text">
 									<span class="tt-m-menu-text-menu">Menu</span>
 									<span class="tt-m-menu-text-close">Close</span>
 								</div>
 								<div class="tt-m-menu-toggle-btn-holder">
-									<a href="#" class="tt-m-menu-toggle-btn"><span></span></a>
+									<a href="#" class="tt-m-menu-toggle-btn" aria-label="Open menu"><span></span></a>
 								</div>
 							</div>
-							<!-- End mobile menu toggle button -->
 
-							<!-- Begin header button (hidden on small screens!) -->
-							<a href="https://wa.me/919256449413" class="tt-btn tt-btn-primary hide-from-xlg" target="_blank" rel="noopener">
+							<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project." class="tt-btn tt-btn-primary hide-from-xlg" target="_blank" rel="noopener">
 								<span>Let's Talk</span>
 								<span class="tt-btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
 							</a>
-							<!-- End header button -->
-
-						</div> <!-- /.header-col -->
-					</div> <!-- /.header-inner -->
-				</header>
-				<!-- End header -->
-
-
-				<!-- ========================
-				///// Begin page header /////
-				============================= 
-				* Use class "ph-full" to enable fullscreen size (no effect on small screens!).
-				* Use class "ph-full-m" to enable fullscreen size on small screens.
-				* Use class "ph-cap-sm", "ph-cap-lg", "ph-cap-xlg", "ph-cap-xxlg" "ph-cap-xxxlg" or "ph-cap-xxxxlg" to set caption size (no class = default size).
-				* Use class "ph-center" to align the content to the center. 
-				* Use class "ph-caption-parallax" to enable caption parallax.
-				* Use class "ph-image-parallax" to enable image/video parallax (if image/video exist).
-				* Use class "ph-bg-is-light" if needed, it makes the elements dark and more visible if you use a very light background image (effect only if the image/video exist).
-				-->
-				<div id="page-header" class="ph-full ph-full-m ph-cap-xlg ph-caption-parallax tt-site-section-hero">
-
-					<!-- Begin page header inner -->
-					<div class="page-header-inner">
-
-						<div class="ph-caption">
-							<div class="ph-caption-inner tt-hero-caption">
-								<p class="ph-caption-subtitle tt-hero-eyebrow">Jaipur · Design Studio</p>
-								<h1 class="ph-caption-title">Let’s Build<br> the <span class="text-primary">Brand</span> You<br> Meant to Build</h1>
-								<div class="ph-caption-description max-width-700">
-									Design and development, done with passion,<br> curiosity, and a little bit of mischief.
-								</div>
-							</div> <!-- /.ph-caption-inner -->
-						</div>  <!-- /.ph-caption -->
+						</div>
 
 					</div>
-					<!-- End page header inner -->
+				</header>
+
+
+				<!-- ===== Hero + about ===== -->
+				<div id="page-header" class="ph-full ph-full-m ph-cap-xlg ph-caption-parallax tt-site-section-hero">
+
+					<div class="page-header-inner">
+						<div class="ph-caption">
+							<div class="ph-caption-inner tt-hero-caption">
+								<p class="ph-caption-subtitle tt-hero-eyebrow">Web Design &amp; Development Studio · Jaipur</p>
+								<h1 class="ph-caption-title">Websites, Landing Pages &amp; Tools That <span class="text-primary">Grow</span> Your Business</h1>
+								<div class="ph-caption-description max-width-700">
+									Design and development, done with passion, curiosity, and a little bit of mischief.
+								</div>
+								<div class="tt-hero-actions">
+									<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%27d%20like%20to%20start%20a%20project." class="tt-btn tt-btn-primary" target="_blank" rel="noopener">
+										<span data-hover="Start a Project">Start a Project</span>
+										<span class="tt-btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
+									</a>
+									<a href="#work" class="tt-btn tt-btn-accent">
+										<span data-hover="See Our Work">See Our Work</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
 					<div id="about" class="ph-about">
 						<div class="tt-wrap">
@@ -238,28 +212,35 @@
 								</div>
 								<div class="tt-col-xl-8">
 									<div class="text-xlg">
-										<p class="tt-anim-lines">We are Caper Works — a web development and design agency based in Jaipur. We build websites, craft UI/UX, and design landing pages that convert. From brand identity to full digital products, we partner with homegrown brands and growing brands to create experiences that look sharp, work flawlessly, and connect with real people.</p>
+										<p class="tt-anim-lines">One studio for everything your business needs online. We design and build websites for local businesses, landing pages for brands running ads, online stores for D2C brands, and simple tools that take the manual work out of running a school or institute.</p>
 									</div>
 								</div>
 							</div>
+
+							<ul class="tt-proof-strip" aria-label="Caper Works at a glance">
+								<li class="tt-proof-item">
+									<span class="tt-proof-value">56+</span>
+									<span class="tt-proof-label">Websites delivered</span>
+								</li>
+								<li class="tt-proof-item">
+									<span class="tt-proof-value">4</span>
+									<span class="tt-proof-label">Ways we help you grow</span>
+								</li>
+								<li class="tt-proof-item">
+									<span class="tt-proof-value">1</span>
+									<span class="tt-proof-label">Team for design + development</span>
+								</li>
+							</ul>
 						</div>
 					</div>
 
 				</div>
-				<!-- End page header -->
 
 
-				<!-- *************************************
-				*********** Begin page content *********** 
-				************************************** -->
+				<!-- ===== Page content ===== -->
 				<div id="tt-page-content">
-					<!-- =======================
-					///// Begin tt-section /////
-					============================ 
-					* You can use padding classes if needed. For example "padding-top-xlg-150", "padding-bottom-xlg-150", "no-padding-top", "no-padding-bottom", etc.
-					* You can use classes "border-top" and "border-bottom" if needed. 
-					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
-					-->
+
+					<!-- Services -->
 					<div id="services" class="tt-section tt-site-section">
 						<div class="tt-section-inner tt-wrap max-width-1700">
 
@@ -267,302 +248,441 @@
 								<div class="tt-heading tt-heading-lg">
 									<h2 class="tt-heading-title tt-anim-characters">What We Do</h2>
 								</div>
-								<p class="tt-anim-lines">From brand identity to websites and campaigns — we partner with homegrown brands and growing brands across Jaipur and beyond.</p>
-								<a href="#tt-footer" class="tt-btn tt-btn-primary margin-top-20">
-									<span data-hover="Let's Connect!">Let's Connect!</span>
-								</a>
+								<p class="tt-anim-lines">Four things, done properly. Pick the one that fits where your business is today.</p>
 							</div>
 
 							<div class="tt-services-grid tt-services-static tt-mobile-swiper">
-
 								<div class="swiper">
 									<div class="swiper-wrapper">
 
 										<div class="swiper-slide">
 											<div class="tt-service-card tt-anim-fadeinup">
 												<span class="tt-service-card-num">01</span>
-												<h3 class="tt-service-card-title">Web Design &amp; Development</h3>
-												<p>Custom websites built to perform — responsive, fast, and on-brand from the first pixel to the final deploy.</p>
+												<h3 class="tt-service-card-title">Business Websites</h3>
+												<p class="tt-service-card-for">For clinics, shops, showrooms &amp; institutes</p>
+												<p>A professional website that makes people trust you before they call — and helps them find you on Google.</p>
+												<ul class="tt-service-card-list">
+													<li>Mobile-first design</li>
+													<li>Google Maps &amp; local SEO setup</li>
+													<li>WhatsApp &amp; call buttons</li>
+												</ul>
+												<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%20need%20a%20business%20website." class="tt-service-card-link" target="_blank" rel="noopener">Get a quote <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
 											</div>
 										</div>
 
 										<div class="swiper-slide">
 											<div class="tt-service-card tt-anim-fadeinup">
 												<span class="tt-service-card-num">02</span>
-												<h3 class="tt-service-card-title">E-commerce Development</h3>
-												<p>Online stores that convert — product pages, checkout flows, and payments done right.</p>
+												<h3 class="tt-service-card-title">Ad Landing Pages</h3>
+												<p class="tt-service-card-for">For brands running Meta &amp; Google ads</p>
+												<p>Focused pages built for one job: turning ad clicks into leads and sales. Fast, on-message and fully tracked.</p>
+												<ul class="tt-service-card-list">
+													<li>Meta Pixel &amp; GA4 tracking</li>
+													<li>Lead forms connected to your sheet or CRM</li>
+													<li>Variations for A/B testing</li>
+												</ul>
+												<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%20need%20a%20landing%20page%20for%20my%20ads." class="tt-service-card-link" target="_blank" rel="noopener">Get a quote <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
 											</div>
 										</div>
 
 										<div class="swiper-slide">
 											<div class="tt-service-card tt-anim-fadeinup">
 												<span class="tt-service-card-num">03</span>
-												<h3 class="tt-service-card-title">Landing Pages</h3>
-												<p>High-converting pages for launches, campaigns, and lead generation — focused, fast, and built to drive action.</p>
+												<h3 class="tt-service-card-title">D2C Brand Websites</h3>
+												<p class="tt-service-card-for">For product brands selling online</p>
+												<p>Online stores that look premium and sell smoothly — product pages, checkout and payments done right.</p>
+												<ul class="tt-service-card-list">
+													<li>Shopify or custom builds</li>
+													<li>Product page &amp; checkout design</li>
+													<li>Payments &amp; shipping setup</li>
+												</ul>
+												<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%20need%20a%20website%20for%20my%20D2C%20brand." class="tt-service-card-link" target="_blank" rel="noopener">Get a quote <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
 											</div>
 										</div>
 
 										<div class="swiper-slide">
 											<div class="tt-service-card tt-anim-fadeinup">
 												<span class="tt-service-card-num">04</span>
-												<h3 class="tt-service-card-title">UI/UX Design</h3>
-												<p>Designing intuitive and engaging experiences that are beautiful, functional, and easy to navigate.</p>
-											</div>
-										</div>
-
-										<div class="swiper-slide">
-											<div class="tt-service-card tt-anim-fadeinup">
-												<span class="tt-service-card-num">05</span>
-												<h3 class="tt-service-card-title">Website Maintenance &amp; Optimization</h3>
-												<p>Keep your site fast, secure, and up to date — so it keeps working long after launch day.</p>
+												<h3 class="tt-service-card-title">Custom Tools</h3>
+												<p class="tt-service-card-for">For schools &amp; small institutes</p>
+												<p>Stop running your institute on registers and spreadsheets. Simple web tools for fees, finances and admin — built around how you work.</p>
+												<ul class="tt-service-card-list">
+													<li>Multiple user logins &amp; roles</li>
+													<li>Runs on your own subdomain</li>
+													<li>Your data, exportable anytime</li>
+												</ul>
+												<a href="#tools" class="tt-service-card-link">See how it works <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
 											</div>
 										</div>
 
 									</div>
 								</div>
 								<div class="tt-mobile-swiper-pagination" aria-label="Service slides"></div>
-
 							</div>
-							<!-- End services grid -->
 
-						<div class="tt-section-block tt-services-offer">
-							<div class="tt-pricing-container tt-ppl-boxed">
-								<div class="tt-pricing-plan-list">
-									<div class="tt-row">
-										<div class="tt-col-lg-12 margin-auto">
-											<div class="tt-pricing-plan tt-ppl-services-card tt-anim-fadeinup">
-												<div class="tt-ppl-header">
-													<h3 class="tt-ppl-name">What We Offer</h3>
-													<div class="tt-ppl-description">Every project is different — here's what sets working with Caper Works apart. Tell us what you need, and we'll scope a plan that fits.</div>
-												</div>
-												<div class="tt-ppl-features">
-													<ul class="tt-ppl-features-list tt-ppl-features-grid">
-														<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Design + dev in one team</span></li>
-														<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Custom builds, not templates</span></li>
-														<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Fast, collaborative process</span></li>
-														<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Launch-ready &amp; maintainable</span></li>
-														<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Clear communication</span></li>
-														<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Scoped to your project</span></li>
-													</ul>
-												</div>
-												<div class="tt-ppl-button">
-													<a href="#tt-footer" class="tt-btn tt-btn-primary">
-														<span data-hover="Let's Connect">Let's Connect</span>
-													</a>
+							<div class="tt-section-block tt-services-offer">
+								<div class="tt-pricing-container tt-ppl-boxed">
+									<div class="tt-pricing-plan-list">
+										<div class="tt-row">
+											<div class="tt-col-lg-12 margin-auto">
+												<div class="tt-pricing-plan tt-ppl-services-card tt-anim-fadeinup">
+													<div class="tt-ppl-header">
+														<h3 class="tt-ppl-name">Why Caper Works</h3>
+														<div class="tt-ppl-description">Whatever you're building, here's what working with us looks like.</div>
+													</div>
+													<div class="tt-ppl-features">
+														<ul class="tt-ppl-features-list tt-ppl-features-grid">
+															<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Design + development in one team</span></li>
+															<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">One point of contact, start to finish</span></li>
+															<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Clear quote and timeline before we start</span></li>
+															<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Fast, collaborative process</span></li>
+															<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">Support after launch</span></li>
+															<li class="tt-ppl-feature"><span class="tt-ppl-feature-icon"><i class="fa-solid fa-check"></i></span><span class="tt-ppl-feature-text">56+ websites delivered</span></li>
+														</ul>
+													</div>
+													<div class="tt-ppl-button">
+														<a href="#contact" class="tt-btn tt-btn-primary">
+															<span data-hover="Let's Connect">Let's Connect</span>
+														</a>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
 						</div>
 					</div>
+
+
+					<!-- Tools spotlight -->
+					<div id="tools" class="tt-section tt-site-section">
+						<div class="tt-section-inner tt-wrap max-width-1600">
+							<div class="tt-tools-grid">
+
+								<div class="tt-tools-copy">
+									<p class="tt-section-eyebrow">Custom Tools</p>
+									<div class="tt-heading tt-heading-lg">
+										<h2 class="tt-heading-title tt-anim-characters">Less Paperwork, More Teaching</h2>
+									</div>
+									<p class="tt-anim-lines">Many schools and institutes still run fees, finances and admissions on registers and Excel. We build simple web tools that do it for you — on your own website's subdomain, with a login for every staff member.</p>
+
+									<ul class="tt-tools-features">
+										<li><i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i><span><strong>Fees &amp; finances</strong> — collections, dues, expenses and reports in one place</span></li>
+										<li><i class="fa-solid fa-users" aria-hidden="true"></i><span><strong>Multiple logins</strong> — separate access for the principal, accounts and staff</span></li>
+										<li><i class="fa-solid fa-globe" aria-hidden="true"></i><span><strong>Your subdomain</strong> — e.g. <em>fees.yourschool.in</em>, under your own name</span></li>
+										<li><i class="fa-solid fa-file-export" aria-hidden="true"></i><span><strong>Your data</strong> — export to Excel whenever you need it</span></li>
+									</ul>
+
+									<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%27d%20like%20a%20custom%20tool%20for%20my%20school%20or%20institute." class="tt-btn tt-btn-primary margin-top-20" target="_blank" rel="noopener">
+										<span data-hover="Talk About a Tool">Talk About a Tool</span>
+										<span class="tt-btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
+									</a>
+								</div>
+
+								<div class="tt-tools-mock" aria-hidden="true">
+									<div class="tt-mock-window">
+										<div class="tt-mock-bar">
+											<span></span><span></span><span></span>
+											<div class="tt-mock-url">fees.yourschool.in</div>
+										</div>
+										<div class="tt-mock-body">
+											<div class="tt-mock-head">
+												<div>
+													<div class="tt-mock-title">Fee Dashboard</div>
+													<div class="tt-mock-sub">Session 2026–27 · Sample data</div>
+												</div>
+												<div class="tt-mock-user"><i class="fa-solid fa-user"></i> Accounts</div>
+											</div>
+											<div class="tt-mock-kpis">
+												<div class="tt-mock-kpi"><span>Collected</span><strong>₹18.4L</strong></div>
+												<div class="tt-mock-kpi"><span>Pending</span><strong>₹3.2L</strong></div>
+												<div class="tt-mock-kpi"><span>Students</span><strong>642</strong></div>
+											</div>
+											<div class="tt-mock-table">
+												<div class="tt-mock-row tt-mock-row-head"><span>Student</span><span>Class</span><span>Status</span></div>
+												<div class="tt-mock-row"><span>Aarav S.</span><span>VII-B</span><span class="tt-mock-pill tt-mock-paid">Paid</span></div>
+												<div class="tt-mock-row"><span>Diya M.</span><span>V-A</span><span class="tt-mock-pill tt-mock-due">Due</span></div>
+												<div class="tt-mock-row"><span>Kabir R.</span><span>IX-C</span><span class="tt-mock-pill tt-mock-paid">Paid</span></div>
+												<div class="tt-mock-row"><span>Meera T.</span><span>III-A</span><span class="tt-mock-pill tt-mock-paid">Paid</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+					<!-- Process -->
 					<div id="process" class="tt-section tt-site-section">
 						<div class="tt-section-inner tt-wrap max-width-1600">
 							<div class="tt-heading tt-heading-lg">
 								<h2 class="tt-heading-title tt-anim-characters">Our Process</h2>
 							</div>
-							<p class="tt-anim-lines margin-bottom-40">How we take your project from first conversation to launch.</p>
+							<p class="tt-anim-lines margin-bottom-40">The same four steps for every project — website, landing page, store or tool.</p>
 
 							<div class="tt-process-grid">
 								<div class="tt-process-step">
 									<span class="tt-process-step-num">01</span>
 									<h3 class="tt-process-step-title">Discover</h3>
-									<p>We learn about your brand, goals, and audience — and align on scope and timeline before anything gets designed.</p>
+									<p>We learn about your business, goals and customers — and agree on scope, price and timeline before anything gets designed.</p>
 								</div>
 								<div class="tt-process-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
 								<div class="tt-process-step">
 									<span class="tt-process-step-num">02</span>
 									<h3 class="tt-process-step-title">Design</h3>
-									<p>Wireframes, visuals, and UX that match your brand and guide visitors toward action.</p>
+									<p>Wireframes and visuals that match your brand and guide visitors toward calling, buying or signing up.</p>
 								</div>
 								<div class="tt-process-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
 								<div class="tt-process-step">
 									<span class="tt-process-step-num">03</span>
 									<h3 class="tt-process-step-title">Build</h3>
-									<p>Responsive, performance-focused development with regular check-ins so you always know where things stand.</p>
+									<p>Fast, responsive development with regular check-ins, so you always know where things stand.</p>
 								</div>
 								<div class="tt-process-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></div>
 								<div class="tt-process-step">
 									<span class="tt-process-step-num">04</span>
 									<h3 class="tt-process-step-title">Launch</h3>
-									<p>Deploy, handoff, and support so your site keeps working long after go-live.</p>
+									<p>We go live, set up tracking, hand over everything and stay on to support you after launch.</p>
 								</div>
 							</div>
 						</div>
 					</div>
 
-				
+
+					<!-- Work -->
 					<div id="work" class="tt-section tt-site-section">
 						<div class="tt-section-inner">
 
 							<div class="tt-heading tt-heading-lg margin-bottom-60">
 								<h2 class="tt-heading-title tt-anim-characters">Our Work</h2>
 							</div>
-							<p class="tt-anim-lines margin-bottom-40">Selected projects from homegrown brands and growing brands we've helped build, launch, and grow.</p>
+							<p class="tt-anim-lines margin-bottom-40">A few of the 56+ websites we've built for schools, clinics and local businesses.</p>
 
-							<!-- Begin portfolio grid (works in combination with tt-Grid)
-							========================== 
-							* Use class "tt-pgi-inside" or "tt-pgi-boxed" to change item style (no class = default style).
-							* Use class "tt-pgi-tilted" to enable item tilted style.
-							-->
 							<div class="tt-portfolio-grid tt-pgi-boxed tt-pgi-tilted">
-
-								<!-- Begin tt-Grid 
-								===================
-								* Use class "tt-grid-col-3", "tt-grid-col-4", "tt-grid-col-5" or "tt-grid-col-6" to set the maximum columns to show (depends on your screen width). No class = 2 columns.
-								* Use class "tt-grid-appear" to enable items to appear on scroll.
-								* Use class "tt-grid-gap-1", "tt-grid-gap-2", "tt-grid-gap-3", "tt-grid-gap-4", "tt-grid-gap-5" or "tt-grid-gap-6" to enable space between items.
-								-->
 								<div class="tt-grid tt-grid-col-3 tt-grid-gap-3 tt-grid-appear tt-portfolio-mobile-swiper">
-
 									<div class="tt-grid-list">
-
 										<div class="swiper">
 											<div class="swiper-wrapper">
 
 												<div class="swiper-slide">
-													<div class="tt-grid-item">
-											<div class="tt-grid-item-inner">
-												<div class="tt-portfolio-grid-item">
-													<a href="https://shekhawatisahitya.in" class="tt-pgi-image" target="_blank" rel="noopener">
-														<img src="assets/img/portfolio/work/shekhawatisahitya-800.jpg" loading="lazy" alt="Shekhawati Sahitya website screenshot">
-													</a>
-													<div class="tt-pgi-info">
-														<h2 class="tt-pgi-title"><a href="https://shekhawatisahitya.in" target="_blank" rel="noopener">Shekhawati Sahitya</a></h2>
-														<a href="https://shekhawatisahitya.in" class="tt-pgi-icon" target="_blank" rel="noopener">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+													<div class="tt-grid-item"><div class="tt-grid-item-inner"><div class="tt-portfolio-grid-item">
+														<a href="https://shekhawatisahitya.in" class="tt-pgi-image" target="_blank" rel="noopener">
+															<img src="assets/img/portfolio/work/shekhawatisahitya-800.jpg" loading="lazy" alt="Shekhawati Sahitya website screenshot">
 														</a>
-													</div>
-												</div>
-											</div>
-										</div>
+														<div class="tt-pgi-info">
+															<div>
+																<span class="tt-pgi-tag">Business Website</span>
+																<h3 class="tt-pgi-title"><a href="https://shekhawatisahitya.in" target="_blank" rel="noopener">Shekhawati Sahitya</a></h3>
+															</div>
+															<a href="https://shekhawatisahitya.in" class="tt-pgi-icon" target="_blank" rel="noopener" aria-label="Visit Shekhawati Sahitya">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+															</a>
+														</div>
+													</div></div></div>
 												</div>
 
 												<div class="swiper-slide">
-													<div class="tt-grid-item">
-											<div class="tt-grid-item-inner">
-												<div class="tt-portfolio-grid-item">
-													<a href="https://manasinternet.in" class="tt-pgi-image" target="_blank" rel="noopener">
-														<img src="assets/img/portfolio/work/manasinternet-800.jpg" loading="lazy" alt="Manas Internet website screenshot">
-													</a>
-													<div class="tt-pgi-info">
-														<h2 class="tt-pgi-title"><a href="https://manasinternet.in" target="_blank" rel="noopener">Manas Internet</a></h2>
-														<a href="https://manasinternet.in" class="tt-pgi-icon" target="_blank" rel="noopener">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+													<div class="tt-grid-item"><div class="tt-grid-item-inner"><div class="tt-portfolio-grid-item">
+														<a href="https://manasinternet.in" class="tt-pgi-image" target="_blank" rel="noopener">
+															<img src="assets/img/portfolio/work/manasinternet-800.jpg" loading="lazy" alt="Manas Internet website screenshot">
 														</a>
-													</div>
-												</div>
-											</div>
-										</div>
+														<div class="tt-pgi-info">
+															<div>
+																<span class="tt-pgi-tag">Business Website</span>
+																<h3 class="tt-pgi-title"><a href="https://manasinternet.in" target="_blank" rel="noopener">Manas Internet</a></h3>
+															</div>
+															<a href="https://manasinternet.in" class="tt-pgi-icon" target="_blank" rel="noopener" aria-label="Visit Manas Internet">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+															</a>
+														</div>
+													</div></div></div>
 												</div>
 
 												<div class="swiper-slide">
-													<div class="tt-grid-item">
-											<div class="tt-grid-item-inner">
-												<div class="tt-portfolio-grid-item">
-													<a href="https://semcbseschool.com" class="tt-pgi-image" target="_blank" rel="noopener">
-														<img src="assets/img/portfolio/work/semcbseschool-800.jpg" loading="lazy" alt="SEM CBSE School website screenshot">
-													</a>
-													<div class="tt-pgi-info">
-														<h2 class="tt-pgi-title"><a href="https://semcbseschool.com" target="_blank" rel="noopener">SEM CBSE School</a></h2>
-														<a href="https://semcbseschool.com" class="tt-pgi-icon" target="_blank" rel="noopener">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+													<div class="tt-grid-item"><div class="tt-grid-item-inner"><div class="tt-portfolio-grid-item">
+														<a href="https://semcbseschool.com" class="tt-pgi-image" target="_blank" rel="noopener">
+															<img src="assets/img/portfolio/work/semcbseschool-800.jpg" loading="lazy" alt="SEM CBSE School website screenshot">
 														</a>
-													</div>
-												</div>
-											</div>
-										</div>
+														<div class="tt-pgi-info">
+															<div>
+																<span class="tt-pgi-tag">School Website</span>
+																<h3 class="tt-pgi-title"><a href="https://semcbseschool.com" target="_blank" rel="noopener">SEM CBSE School</a></h3>
+															</div>
+															<a href="https://semcbseschool.com" class="tt-pgi-icon" target="_blank" rel="noopener" aria-label="Visit SEM CBSE School">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+															</a>
+														</div>
+													</div></div></div>
 												</div>
 
 												<div class="swiper-slide">
-													<div class="tt-grid-item">
-											<div class="tt-grid-item-inner">
-												<div class="tt-portfolio-grid-item">
-													<a href="https://edukidsnkt.in" class="tt-pgi-image" target="_blank" rel="noopener">
-														<img src="assets/img/portfolio/work/edukidsnkt-800.jpg" loading="lazy" alt="EduKids NKT website screenshot">
-													</a>
-													<div class="tt-pgi-info">
-														<h2 class="tt-pgi-title"><a href="https://edukidsnkt.in" target="_blank" rel="noopener">EduKids NKT</a></h2>
-														<a href="https://edukidsnkt.in" class="tt-pgi-icon" target="_blank" rel="noopener">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+													<div class="tt-grid-item"><div class="tt-grid-item-inner"><div class="tt-portfolio-grid-item">
+														<a href="https://edukidsnkt.in" class="tt-pgi-image" target="_blank" rel="noopener">
+															<img src="assets/img/portfolio/work/edukidsnkt-800.jpg" loading="lazy" alt="EduKids NKT website screenshot">
 														</a>
-													</div>
-												</div>
-											</div>
-										</div>
+														<div class="tt-pgi-info">
+															<div>
+																<span class="tt-pgi-tag">School Website</span>
+																<h3 class="tt-pgi-title"><a href="https://edukidsnkt.in" target="_blank" rel="noopener">EduKids NKT</a></h3>
+															</div>
+															<a href="https://edukidsnkt.in" class="tt-pgi-icon" target="_blank" rel="noopener" aria-label="Visit EduKids NKT">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+															</a>
+														</div>
+													</div></div></div>
 												</div>
 
 												<div class="swiper-slide">
-													<div class="tt-grid-item">
-											<div class="tt-grid-item-inner">
-												<div class="tt-portfolio-grid-item">
-													<a href="https://samarthyankt.in" class="tt-pgi-image" target="_blank" rel="noopener">
-														<img src="assets/img/portfolio/work/samarthyankt-800.jpg" loading="lazy" alt="Samarthyan NKT website screenshot">
-													</a>
-													<div class="tt-pgi-info">
-														<h2 class="tt-pgi-title"><a href="https://samarthyankt.in" target="_blank" rel="noopener">Samarthyan NKT</a></h2>
-														<a href="https://samarthyankt.in" class="tt-pgi-icon" target="_blank" rel="noopener">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+													<div class="tt-grid-item"><div class="tt-grid-item-inner"><div class="tt-portfolio-grid-item">
+														<a href="https://samarthyankt.in" class="tt-pgi-image" target="_blank" rel="noopener">
+															<img src="assets/img/portfolio/work/samarthyankt-800.jpg" loading="lazy" alt="Samarthyan NKT website screenshot">
 														</a>
-													</div>
-												</div>
-											</div>
-										</div>
+														<div class="tt-pgi-info">
+															<div>
+																<span class="tt-pgi-tag">Business Website</span>
+																<h3 class="tt-pgi-title"><a href="https://samarthyankt.in" target="_blank" rel="noopener">Samarthyan NKT</a></h3>
+															</div>
+															<a href="https://samarthyankt.in" class="tt-pgi-icon" target="_blank" rel="noopener" aria-label="Visit Samarthyan NKT">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+															</a>
+														</div>
+													</div></div></div>
 												</div>
 
 												<div class="swiper-slide">
-													<div class="tt-grid-item">
-											<div class="tt-grid-item-inner">
-												<div class="tt-portfolio-grid-item">
-													<a href="https://ankurwellness.in" class="tt-pgi-image" target="_blank" rel="noopener">
-														<img src="assets/img/portfolio/work/ankurwellness-800.jpg" loading="lazy" alt="Ankur Wellness website screenshot">
-													</a>
-													<div class="tt-pgi-info">
-														<h2 class="tt-pgi-title"><a href="https://ankurwellness.in" target="_blank" rel="noopener">Ankur Wellness</a></h2>
-														<a href="https://ankurwellness.in" class="tt-pgi-icon" target="_blank" rel="noopener">
-															<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+													<div class="tt-grid-item"><div class="tt-grid-item-inner"><div class="tt-portfolio-grid-item">
+														<a href="https://ankurwellness.in" class="tt-pgi-image" target="_blank" rel="noopener">
+															<img src="assets/img/portfolio/work/ankurwellness-800.jpg" loading="lazy" alt="Ankur Wellness website screenshot">
 														</a>
-													</div>
-												</div>
-											</div>
-										</div>
+														<div class="tt-pgi-info">
+															<div>
+																<span class="tt-pgi-tag">Clinic Website</span>
+																<h3 class="tt-pgi-title"><a href="https://ankurwellness.in" target="_blank" rel="noopener">Ankur Wellness</a></h3>
+															</div>
+															<a href="https://ankurwellness.in" class="tt-pgi-icon" target="_blank" rel="noopener" aria-label="Visit Ankur Wellness">
+																<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
+															</a>
+														</div>
+													</div></div></div>
 												</div>
 
 											</div>
 										</div>
 										<div class="tt-mobile-swiper-pagination" aria-label="Portfolio slides"></div>
-
-									</div> <!-- /.tt-grid-list --> 
-
+									</div>
 								</div>
-								<!-- End tt-Grid --> 
+							</div>
+
+						</div>
+					</div>
+
+
+					<!-- FAQ -->
+					<div id="faq" class="tt-section tt-site-section">
+						<div class="tt-section-inner tt-wrap max-width-1600">
+							<div class="tt-heading tt-heading-lg margin-bottom-40">
+								<h2 class="tt-heading-title tt-anim-characters">Questions?</h2>
+							</div>
+
+							<div class="tt-accordion tt-acc-boxed tt-acc-tilted">
+
+								<div class="tt-accordion-item">
+									<div class="tt-accordion-heading">
+										<div class="tt-acc-head"><div class="tt-acc-head-inner"><h3 class="tt-acc-head-title">How much does a website cost?</h3></div></div>
+										<div class="tt-accordion-caret"><div class="tt-accordion-caret-inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg></div></div>
+									</div>
+									<div class="tt-accordion-content">
+										<p>It depends on what you need — a business website, a landing page, a store or a tool. Tell us about your project on WhatsApp and we'll send a clear quote before any work starts.</p>
+									</div>
+								</div>
+
+								<div class="tt-accordion-item">
+									<div class="tt-accordion-heading">
+										<div class="tt-acc-head"><div class="tt-acc-head-inner"><h3 class="tt-acc-head-title">How long does a project take?</h3></div></div>
+										<div class="tt-accordion-caret"><div class="tt-accordion-caret-inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg></div></div>
+									</div>
+									<div class="tt-accordion-content">
+										<p>Landing pages are the quickest; stores and custom tools take longer. We agree on a timeline during Discover and keep you updated at every step.</p>
+									</div>
+								</div>
+
+								<div class="tt-accordion-item">
+									<div class="tt-accordion-heading">
+										<div class="tt-acc-head"><div class="tt-acc-head-inner"><h3 class="tt-acc-head-title">Do you build on Shopify?</h3></div></div>
+										<div class="tt-accordion-caret"><div class="tt-accordion-caret-inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg></div></div>
+									</div>
+									<div class="tt-accordion-content">
+										<p>Yes. For D2C brands we build on Shopify or with custom code, depending on your products, budget and growth plans.</p>
+									</div>
+								</div>
+
+								<div class="tt-accordion-item">
+									<div class="tt-accordion-heading">
+										<div class="tt-acc-head"><div class="tt-acc-head-inner"><h3 class="tt-acc-head-title">Will my landing page track ad results?</h3></div></div>
+										<div class="tt-accordion-caret"><div class="tt-accordion-caret-inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg></div></div>
+									</div>
+									<div class="tt-accordion-content">
+										<p>Yes. We set up Meta Pixel and Google Analytics with conversion events, so you can see which ads bring in leads and sales.</p>
+									</div>
+								</div>
+
+								<div class="tt-accordion-item">
+									<div class="tt-accordion-heading">
+										<div class="tt-acc-head"><div class="tt-acc-head-inner"><h3 class="tt-acc-head-title">Is our school's data safe in a custom tool?</h3></div></div>
+										<div class="tt-accordion-caret"><div class="tt-accordion-caret-inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg></div></div>
+									</div>
+									<div class="tt-accordion-content">
+										<p>Each tool runs on your own subdomain, with a separate login and access level for every staff member. The data belongs to you, and you can export it whenever you need.</p>
+									</div>
+								</div>
+
+								<div class="tt-accordion-item">
+									<div class="tt-accordion-heading">
+										<div class="tt-acc-head"><div class="tt-acc-head-inner"><h3 class="tt-acc-head-title">Do you work with clients outside Jaipur?</h3></div></div>
+										<div class="tt-accordion-caret"><div class="tt-accordion-caret-inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg></div></div>
+									</div>
+									<div class="tt-accordion-content">
+										<p>Yes. We're based in Jaipur and work with clients anywhere over WhatsApp, calls and video meetings.</p>
+									</div>
+								</div>
+
+								<div class="tt-accordion-item">
+									<div class="tt-accordion-heading">
+										<div class="tt-acc-head"><div class="tt-acc-head-inner"><h3 class="tt-acc-head-title">What happens after launch?</h3></div></div>
+										<div class="tt-accordion-caret"><div class="tt-accordion-caret-inner"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg></div></div>
+									</div>
+									<div class="tt-accordion-content">
+										<p>We offer maintenance and support to keep your site fast, secure and up to date — so it keeps working long after launch day.</p>
+									</div>
+								</div>
 
 							</div>
-							<!-- End portfolio grid -->
-
-						</div> <!-- /.tt-section-inner -->
+						</div>
 					</div>
-					<!-- End tt-section -->
 
 				</div>
-				<!-- End page content -->
 
 
-
-				<!-- ======================
-				///// Begin tt-footer /////
-				=========================== -->
-								<footer id="tt-footer" class="tt-site-section-footer">
-					<div class="tt-footer-inner tt-wrap">
+				<!-- ===== Footer ===== -->
+				<footer id="tt-footer" class="tt-site-section-footer">
+					<div id="contact" class="tt-footer-inner tt-wrap">
 						<div class="tt-footer-shell">
 							<div class="tt-footer-grid">
 								<div class="tt-footer-box tt-footer-box-cta">
-									<h2>Ready to push<br>beyond limits?</h2>
-									<a href="https://wa.me/919256449413" class="tt-btn tt-btn-secondary margin-top-30" target="_blank" rel="noopener">
-										<span data-hover="Let's Connect">Let's Connect</span>
+									<h2>What are you<br>building?</h2>
+									<p class="tt-footer-cta-sub">Pick one and we'll reply on WhatsApp.</p>
+									<div class="tt-footer-choices">
+										<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%20need%20a%20business%20website." class="tt-btn tt-btn-accent" target="_blank" rel="noopener"><span data-hover="Business Website">Business Website</span></a>
+										<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%20need%20a%20landing%20page%20for%20my%20ads." class="tt-btn tt-btn-accent" target="_blank" rel="noopener"><span data-hover="Landing Page">Landing Page</span></a>
+										<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%20need%20a%20website%20for%20my%20D2C%20brand." class="tt-btn tt-btn-accent" target="_blank" rel="noopener"><span data-hover="D2C Website">D2C Website</span></a>
+										<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%27d%20like%20a%20custom%20tool%20for%20my%20school%20or%20institute." class="tt-btn tt-btn-accent" target="_blank" rel="noopener"><span data-hover="Custom Tool">Custom Tool</span></a>
+									</div>
+									<a href="https://wa.me/919256449413?text=Hi%20Caper%20Works%2C%20I%27d%20like%20to%20discuss%20a%20project." class="tt-btn tt-btn-secondary margin-top-20" target="_blank" rel="noopener">
+										<span data-hover="Just Say Hi">Just Say Hi</span>
 										<span class="tt-btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
 									</a>
 								</div>
@@ -570,20 +690,14 @@
 									<div class="margin-bottom-40">
 										<h3 class="tt-contact-info-heading">Our Location</h3>
 										<ul class="tt-list">
-											<li>
-												<a href="https://maps.app.goo.gl/EdmcTQ9LZZFb2Lfu5" class="tt-link" target="_blank" rel="noopener">III, A-10, Mohru Nagar, Manyawas,<br>Mansarovar, Jaipur - 302020</a>
-											</li>
+											<li><a href="https://maps.app.goo.gl/EdmcTQ9LZZFb2Lfu5" class="tt-link" target="_blank" rel="noopener">III, A-10, Mohru Nagar, Manyawas,<br>Mansarovar, Jaipur - 302020</a></li>
 										</ul>
 									</div>
 									<div>
 										<h3 class="tt-contact-info-heading">Contact Details</h3>
 										<ul class="tt-list">
-											<li>
-												<a href="tel:+919256449413" class="tt-link">+91 92564 49413</a>
-											</li>
-											<li>
-												<a href="mailto:hello@caperworks.com" class="tt-link">hello@caperworks.com</a>
-											</li>
+											<li><a href="tel:+919256449413" class="tt-link">+91 92564 49413</a></li>
+											<li><a href="mailto:hello@caperworks.com" class="tt-link">hello@caperworks.com</a></li>
 										</ul>
 									</div>
 								</div>
@@ -596,72 +710,45 @@
 								</div>
 								<div class="tt-footer-box tt-footer-box-copy">
 									<div class="tt-footer-copyright">
-										©<span class="tt-copyright-year"></span> <a href="https://caperworks.com/" class="tt-link">Caper Works</a><br>
+										©<span class="tt-copyright-year"></span> <a href="/" class="tt-link">Caper Works</a><br>
 										All Rights Reserved
 									</div>
 								</div>
 								<div class="tt-footer-box tt-footer-box-credit">
 									<div class="tt-footer-credit-inner">
 										<span>Made with <i class="fa-solid fa-heart text-primary"></i></span>
-										<span>by <a href="https://caperworks.com/" class="tt-link bold text-primary" target="_blank" rel="noopener">Caper Works</a></span>
+										<span>in Jaipur</span>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</footer>
-				<!-- End tt-footer -->
-
 
 			</div>
-			<!-- End content wrap -->
 
-
-			<!-- Begin scroll to top button
-			================================ 
-			* Available data attributes:
-					data-top-offset="800".............(show/hide button from top scroll in px)
-					data-bottom-offset="200".........(show/hide button from bottom scroll in px)
-			-->
+			<!-- Scroll to top -->
 			<div class="tt-scroll-to-top" data-top-offset="800" data-bottom-offset="200">
-				<a href="#" class="tt-stt-inner">
+				<a href="#" class="tt-stt-inner" aria-label="Scroll to top">
 					<div class="tt-stt-arrow">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-							<path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path>
-						</svg>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"></path></svg>
 					</div>
 				</a>
 			</div>
-			<!-- End scroll to top button -->
-
 
 		</main>
-		<!-- End body inner -->
 
-
-        
-
-		<!-- ====================
-		///// Scripts below /////
-		===================== -->
-
-		<!-- Core JS -->
-		<script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->
-
-		<!-- Libs and Plugins JS -->
-		<script src="assets/vendor/gsap/gsap.min.js"></script> <!-- GSAP JS (https://gsap.com/) -->
-		<script src="assets/vendor/gsap/ScrollSmoother.min.js"></script> <!-- GSAP ScrollSmoother JS (https://gsap.com/docs/v3/Plugins/ScrollSmoother/) -->
-		<script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script> <!-- GSAP ScrollToPlugin JS (https://gsap.com/docs/v3/Plugins/ScrollToPlugin/) -->
-		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script> <!-- GSAP ScrollTrigger JS (https://gsap.com/docs/v3/Plugins/ScrollTrigger/) -->
-		<script src="assets/vendor/gsap/SplitText.min.js"></script> <!-- GSAP SplitText JS (https://gsap.com/docs/v3/Plugins/SplitText/) -->
-		<script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script> <!-- Swiper JS (https://swiperjs.com/) -->
-
-		<!-- Master JS -->
+		<!-- Scripts -->
+		<script src="assets/vendor/jquery/jquery.min.js"></script>
+		<script src="assets/vendor/gsap/gsap.min.js"></script>
+		<script src="assets/vendor/gsap/ScrollSmoother.min.js"></script>
+		<script src="assets/vendor/gsap/ScrollToPlugin.min.js"></script>
+		<script src="assets/vendor/gsap/ScrollTrigger.min.js"></script>
+		<script src="assets/vendor/gsap/SplitText.min.js"></script>
+		<script src="assets/vendor/swiper/js/swiper-bundle.min.js"></script>
 		<script src="assets/js/elements.js"></script>
 		<script src="assets/js/theme.js"></script>
-
-
+		<script src="assets/js/site.js"></script>
 
 	</body>
-
 </html>
