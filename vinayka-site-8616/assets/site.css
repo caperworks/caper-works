@@ -225,3 +225,4 @@ footer .copy{grid-column:1/-1;text-align:center;border-top:1px solid rgba(214,17
 }
 @media(max-width:560px){section{padding:70px 0}.grid4{grid-template-columns:1fr}.tiles{grid-template-columns:1fr}.article{padding:50px 0}}
 .sr .map:has(iframe){padding:0}
+.stars{color:var(--gold-d);font-size:22px;letter-spacing:.3em}
