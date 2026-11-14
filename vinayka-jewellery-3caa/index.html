@@ -6,19 +6,19 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Vinayka Jewellery | Jaipur (Dark Teal Concept)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
 <style>
 :root{
   --teal:#0f4a4b; --teal-d:#082e2f; --teal-dd:#051d1e; --teal-l:#1b6a6a;
   --gold:#d6b26e; --gold-d:#a8803a; --paper:#f4f1ea; --sand:#e9e3d4; --ink:#17302f; --muted:#6b7f7d;
-  --serif:'Marcellus',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+  --serif:'Cormorant Garamond',Georgia,serif;--script:'Pinyon Script','Brush Script MT',cursive; --sans:'Jost',system-ui,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:var(--sans);color:var(--ink);background:var(--paper);font-weight:300;line-height:1.65}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
-h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;letter-spacing:.02em}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:.02em}
 .kicker{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-d);font-weight:500}
 .dark .kicker,.kicker.l{color:var(--gold)}
 .btn{display:inline-block;padding:15px 34px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;background:var(--gold);color:var(--teal-dd);border:1px solid var(--gold);transition:.3s;cursor:pointer;font-family:var(--sans)}
@@ -36,21 +36,38 @@ header{position:sticky;top:0;z-index:30;background:var(--teal-d);color:#fff;bord
 .logo{text-align:center;font-family:var(--serif);font-size:30px;letter-spacing:.14em;color:var(--gold);line-height:1;text-transform:uppercase}
 .logo small{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.5em;color:#9fc0bd;margin-top:7px}
 .tools{display:flex;justify-content:flex-end;gap:22px;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
-.tools span b{color:var(--gold);font-weight:500}
+.tools{align-items:center}.ic{width:36px;height:36px;border-radius:50%;background:var(--gold);display:grid;place-items:center;margin-left:-6px}.ic svg{width:17px;height:17px;fill:none;stroke:var(--teal-dd);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.tools span b{color:var(--gold);font-weight:500}
 
 /* hero */
-.hero{position:relative;background:radial-gradient(900px 520px at 70% 45%,var(--teal-l),var(--teal) 45%,var(--teal-dd));color:#fff;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;opacity:.08;background-image:radial-gradient(var(--gold) 1px,transparent 1.6px);background-size:28px 28px}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;min-height:660px;padding-top:50px;padding-bottom:50px}
-.hero h1{font-size:clamp(42px,5.6vw,78px);margin:18px 0 28px;text-transform:uppercase}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.hero-art{display:grid;place-items:center;position:relative}
-.hero-art .ring-bg{position:absolute;width:86%;aspect-ratio:1;border:1px solid rgba(214,178,110,.45);border-radius:50%}
-.hero-art .ring-bg.b{width:66%;border-style:dashed;opacity:.6}
-.hero-art svg{width:78%;position:relative;filter:drop-shadow(0 28px 36px rgba(0,0,0,.5))}
-.promo{position:absolute;right:0;bottom:6px;background:var(--paper);color:var(--teal-dd);padding:18px 24px;text-align:center}
-.promo b{font-family:var(--serif);font-size:26px;display:block;line-height:1.1}
-.promo span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-d)}
+.hero{position:relative;background:var(--teal-dd);color:#fff;overflow:hidden}
+.hero .hero-bg{position:absolute;inset:0;z-index:0;background-color:var(--teal-d);background-size:cover;display:block}
+.hero .hero-bg svg{display:none}
+.hero .hero-bg{left:36%;-webkit-mask-image:linear-gradient(90deg,transparent,#000 38%);mask-image:linear-gradient(90deg,transparent,#000 38%)}
+.hero .hero-bg.has-img{background-size:cover!important;background-position:50% 12%!important}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(5,29,30,.9) 0%,rgba(5,29,30,.45) 42%,rgba(5,29,30,0) 70%),linear-gradient(0deg,rgba(5,29,30,.7),transparent 30%)}
+.hero .wrap{position:relative;z-index:2;display:block;min-height:min(86vh,780px);padding-top:0;padding-bottom:0}
+.hero .copy{padding:150px 0 130px;max-width:660px}
+.script{font-family:var(--script);font-size:clamp(34px,4vw,52px);color:var(--gold);line-height:1;display:block}
+.eyebrow{display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.eyebrow::before{content:"";width:46px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(46px,6.2vw,92px);margin:14px 0 22px;line-height:1;text-transform:uppercase;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--gold);display:block}
+.hero .wrap>div{min-width:0}
+.hero .sub{max-width:470px;color:#bcd5d2;font-size:17px;margin-bottom:34px}
+.hero .cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.45)}
+.btn.ghost:hover{background:#fff;color:var(--teal-dd);border-color:#fff}
+.trust{display:flex;margin-top:46px;border-top:1px solid rgba(214,178,110,.3);padding-top:22px;max-width:520px}
+.trust div{flex:1;padding-right:18px}
+.trust div+div{padding-left:18px;border-left:1px solid rgba(214,178,110,.3)}
+.trust b{display:block;white-space:nowrap;font-family:var(--serif);font-weight:400;font-size:21px;color:var(--gold);line-height:1.1}
+.trust span{font-size:10px;letter-spacing:.18em;white-space:nowrap;text-transform:uppercase;color:#9fc0bd}
+
+.hero .cats{position:relative;z-index:2;border-top:1px solid rgba(214,178,110,.25);background:rgba(5,29,30,.35)}
+.hero .cats .wrap{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;min-height:0;padding-top:18px;padding-bottom:18px;grid-template-columns:none}
+.hero .cats a{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#bcd5d2;transition:.25s}
+.hero .cats a:hover{color:var(--gold)}
+.hero .cats a+a::before{content:"\25C6";color:var(--gold);font-size:8px;margin-right:34px;vertical-align:2px}
 
 /* about */
 section{padding:100px 0}
@@ -152,8 +169,6 @@ footer ul a:hover{color:var(--gold)}
 footer .copy{grid-column:1/-1;text-align:center;border-top:1px solid rgba(214,178,110,.2);padding-top:24px;margin-top:10px;font-size:12px;opacity:.75}
 
 /* photo slots */
-.hero-photo{position:relative;width:70%;aspect-ratio:4/5;border-radius:999px 999px 0 0;border:1px solid rgba(214,178,110,.55);display:grid;place-items:center;background-color:rgba(255,255,255,.03)}
-.hero-photo svg{width:80%}
 .has-img{background-size:cover!important;background-position:center!important;font-size:0!important;color:transparent!important}
 .has-img>svg{display:none}
 .split .pic,.post .pic,.ig,.sr .map{position:relative}
@@ -183,11 +198,13 @@ footer .copy{grid-column:1/-1;text-align:center;border-top:1px solid rgba(214,17
   .nav{grid-template-columns:1fr auto}.nav ul{display:none}.tools{display:none}.logo{text-align:left}
   .hero .wrap,.about .wrap,.enq .wrap,footer .wrap{grid-template-columns:1fr}
   .hero .wrap{min-height:auto}
+  .hero .hero-bg{left:0;-webkit-mask-image:none;mask-image:none}.hero .hero-bg.has-img{background-size:cover!important;background-position:78% 0!important}.hero::before{background:linear-gradient(0deg,rgba(5,29,30,.96) 0%,rgba(5,29,30,.82) 45%,rgba(5,29,30,.35) 100%)}.hero .copy{padding:90px 0 70px}
+  .hero .cats a+a::before{margin-right:22px}.hero .cats .wrap{gap:8px 22px}
   .grid4{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}
   .split .wrap{grid-template-columns:1fr}.s2 .pic,.s2 .txt{order:initial}.split .pic{min-height:320px}
   .perks .wrap{grid-template-columns:1fr}
 }
-@media(max-width:560px){section{padding:70px 0}.grid4{grid-template-columns:1fr}.promo{position:static;margin-top:10px}}
+@media(max-width:560px){section{padding:70px 0}.grid4{grid-template-columns:1fr}.trust div{padding-right:8px}.trust div+div{padding-left:10px}.trust b{font-size:16px;white-space:normal}.trust span{font-size:9px;letter-spacing:.1em;white-space:normal}.hero .cats{display:none}}
 </style>
 </head>
 <body>
@@ -223,21 +240,26 @@ footer .copy{grid-column:1/-1;text-align:center;border-top:1px solid rgba(214,17
       <li><a href="#showrooms">Showrooms</a></li><li><a href="#enquire">Contact</a></li>
     </ul>
     <a href="#top" class="logo">Vinayka<small>Jewellery &middot; Jaipur</small></a>
-    <div class="tools"><span>Wishlist <b>3</b></span><span>Account</span></div>
+    <div class="tools"><span>Wishlist <b>3</b></span><span>Account</span><a class="ic" href="#arrivals" aria-label="Search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg></a><a class="ic" href="#enquire" aria-label="Enquiry basket"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11H6.2L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></a></div>
   </div>
 </header>
 
 <section class="hero" id="top" style="padding:0">
+  <div class="hero-photo hero-bg" aria-hidden="true"></div>
   <div class="wrap">
-    <div>
-      <span class="kicker l">Simple &amp; Elegant</span>
-      <h1>Crafted in <em>Jaipur.</em> Worn for a lifetime.</h1>
-      <a href="#arrivals" class="btn">Shop This Collection</a>
+    <div class="copy">
+      <span class="script">Jewellery, made to be inherited</span>
+      <h1>Heirlooms <em>handcrafted in Jaipur</em></h1>
+      <p class="sub">Polki, kundan, gold and diamond jewellery made by skilled karigars and shown at our MI Road showroom.</p>
+      <div class="cta-row">
+        <a href="#arrivals" class="btn">Shop This Collection</a>
+        <a href="https://wa.me/919509757411?text=Hi%2C%20I%27d%20like%20to%20see%20your%20jewellery." target="_blank" rel="noopener" class="btn ghost">Chat on WhatsApp</a>
+      </div>
     </div>
-    <div class="hero-art">
-      <div class="ring-bg"></div><div class="ring-bg b"></div>
-      <div class="hero-photo"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#necklace"/></svg></div>
-      <div class="promo"><b>Festive Offers</b><span>Ask in showroom</span></div>
+  </div>
+  <div class="cats">
+    <div class="wrap">
+      <a href="#arrivals">Bridal</a><a href="#arrivals">Kundan &amp; Polki</a><a href="#arrivals">Gold</a><a href="#arrivals">Diamond</a><a href="#arrivals">Gemstone</a><a href="#enquire">Custom Design</a>
     </div>
   </div>
 </section>
@@ -376,7 +398,7 @@ footer .copy{grid-column:1/-1;text-align:center;border-top:1px solid rgba(214,17
   var IMG='https://img1.wsimg.com/isteam/ip/8280efe5-1e8c-4813-ad70-2855c5a0ac39/';
   var P1='18-02-2026%20Vinayaka%20Jewellers4039.jpeg',P2='18-02-2026%20Vinayaka%20Jewellers4582.jpeg',P3='18-02-2026%20Vinayaka%20Jewellers4472.jpeg',P4='18-02-2026%20Vinayaka%20Jewellers3829.jpeg';
   var H1='KC_08390-af00ca2.jpeg',H2='KC_07858.jpeg',H3='KC_08069.jpeg',H4='KC_08273.jpeg',H5='KC_08137.jpeg',H6='KC_08075.jpeg',H7='KC_08100.jpeg';
-  var DEF={hero0:P1,about0:P2,about1:P4,prod0:P3,prod1:H4,prod2:H7,prod3:H6,split0:H1,split1:H2,post0:H5,post1:H3,post2:P2,ig0:P1,ig1:P2,ig2:P3,ig3:P4,ig4:H4,ig5:H1};
+  var DEF={hero0:P1,hero1:H4,hero2:H1,about0:P2,about1:P4,prod0:P3,prod1:H4,prod2:H7,prod3:H6,split0:H1,split1:H2,post0:H5,post1:H3,post2:P2,ig0:P1,ig1:P2,ig2:P3,ig3:P4,ig4:H4,ig5:H1};
   var MAPS={map0:'Vinayka Jewellery, Mirza Ismail Road, Jayanti Market, New Colony, Jaipur, Rajasthan'};
   var store={
     get:function(k){try{return localStorage.getItem('vj_'+k)}catch(e){return null}},
@@ -405,7 +427,7 @@ footer .copy{grid-column:1/-1;text-align:center;border-top:1px solid rgba(214,17
       var saved=store.get(el.dataset.key);
       if(isMap(el)){ var ad=saved||MAPS[el.dataset.key]; if(ad) setMap(el,ad); return; }
       if(saved){ setImg(el,saved); }
-      else if(DEF[el.dataset.key]){ var u=IMG+DEF[el.dataset.key]+'/:/rs=w:'+(el.dataset.key==='hero0'?900:700)+',m'; var im=new Image(); im.onload=function(){setImg(el,u)}; im.src=u; }
+      else if(DEF[el.dataset.key]){ var u=IMG+DEF[el.dataset.key]+'/:/rs=w:'+(el.dataset.key==='hero0'?1600:700)+',m'; var im=new Image(); im.onload=function(){setImg(el,u)}; im.src=u; }
       el.addEventListener('dragover',function(e){e.preventDefault();el.classList.add('dragover')});
       el.addEventListener('dragleave',function(){el.classList.remove('dragover')});
       el.addEventListener('drop',function(e){e.preventDefault();el.classList.remove('dragover');if(e.dataTransfer.files[0])apply(el,e.dataTransfer.files[0])});
