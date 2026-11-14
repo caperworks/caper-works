@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Vinayka Jewellery | Jaipur (Dark Teal Concept)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#0f4a4b; --teal-d:#082e2f; --teal-dd:#051d1e; --teal-l:#1b6a6a;
+  --gold:#d6b26e; --gold-d:#a8803a; --paper:#f4f1ea; --sand:#e9e3d4; --ink:#17302f; --muted:#6b7f7d;
+  --serif:'Marcellus',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);font-weight:300;line-height:1.65}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;letter-spacing:.02em}
+.kicker{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-d);font-weight:500}
+.dark .kicker,.kicker.l{color:var(--gold)}
+.btn{display:inline-block;padding:15px 34px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;background:var(--gold);color:var(--teal-dd);border:1px solid var(--gold);transition:.3s;cursor:pointer;font-family:var(--sans)}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn.out{background:transparent;color:var(--teal);border-color:var(--teal)}
+.btn.out:hover{background:var(--teal);color:#fff}
+
+.ribbon{background:var(--teal-dd);color:#9fc0bd;text-align:center;font-size:12px;letter-spacing:.12em;padding:7px 12px}
+
+/* header */
+header{position:sticky;top:0;z-index:30;background:var(--teal-d);color:#fff;border-bottom:1px solid rgba(214,178,110,.25)}
+.nav{height:84px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+.nav ul{list-style:none;display:flex;gap:30px;font-size:12px;letter-spacing:.2em;text-transform:uppercase}
+.nav ul a:hover{color:var(--gold)}
+.logo{text-align:center;font-family:var(--serif);font-size:30px;letter-spacing:.14em;color:var(--gold);line-height:1;text-transform:uppercase}
+.logo small{display:block;font-family:var(--sans);font-size:9px;letter-spacing:.5em;color:#9fc0bd;margin-top:7px}
+.tools{display:flex;justify-content:flex-end;gap:22px;font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+.tools span b{color:var(--gold);font-weight:500}
+
+/* hero */
+.hero{position:relative;background:radial-gradient(900px 520px at 70% 45%,var(--teal-l),var(--teal) 45%,var(--teal-dd));color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;opacity:.08;background-image:radial-gradient(var(--gold) 1px,transparent 1.6px);background-size:28px 28px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;min-height:660px;padding-top:50px;padding-bottom:50px}
+.hero h1{font-size:clamp(42px,5.6vw,78px);margin:18px 0 28px;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-art{display:grid;place-items:center;position:relative}
+.hero-art .ring-bg{position:absolute;width:86%;aspect-ratio:1;border:1px solid rgba(214,178,110,.45);border-radius:50%}
+.hero-art .ring-bg.b{width:66%;border-style:dashed;opacity:.6}
+.hero-art svg{width:78%;position:relative;filter:drop-shadow(0 28px 36px rgba(0,0,0,.5))}
+.promo{position:absolute;right:0;bottom:6px;background:var(--paper);color:var(--teal-dd);padding:18px 24px;text-align:center}
+.promo b{font-family:var(--serif);font-size:26px;display:block;line-height:1.1}
+.promo span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-d)}
+
+/* about */
+section{padding:100px 0}
+.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.frames{position:relative;aspect-ratio:1/1}
+.frame{position:absolute;display:grid;place-items:center;text-align:center;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);padding:20px}
+.frame.a{left:0;top:0;width:68%;height:74%;background:linear-gradient(160deg,var(--teal-l),var(--teal-d))}
+.frame.b{right:0;bottom:0;width:52%;height:52%;background:linear-gradient(160deg,var(--teal),var(--teal-dd));border:8px solid var(--paper)}
+.about h2{font-size:clamp(32px,4vw,50px);margin:14px 0 22px;color:var(--teal)}
+.about p{color:var(--muted);margin-bottom:28px;max-width:500px}
+
+/* arrivals */
+.arrivals{background:var(--sand);position:relative}
+.arrivals .head{text-align:center;margin-bottom:56px}
+.arrivals h2{font-size:clamp(32px,4vw,50px);margin-top:14px;color:var(--teal)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.prod .img{aspect-ratio:4/5;background:linear-gradient(165deg,var(--teal),var(--teal-dd));display:grid;place-items:center;position:relative;overflow:hidden}
+.prod .img svg{width:54%;transition:transform .5s}
+.prod:hover .img svg{transform:scale(1.1) rotate(-3deg)}
+.prod .act{position:absolute;left:0;right:0;bottom:0;background:var(--gold);color:var(--teal-dd);text-align:center;font-size:11px;letter-spacing:.22em;text-transform:uppercase;padding:13px;font-weight:500;transform:translateY(100%);transition:.35s}
+.prod:hover .act{transform:none}
+.prod h3{font-size:20px;margin-top:16px;color:var(--teal)}
+.prod p{font-size:14px;color:var(--gold-d);letter-spacing:.06em}
+
+/* feature splits */
+.split{padding:0}
+.split .wrap{display:grid;grid-template-columns:1fr 1fr;gap:0;padding:0;max-width:none}
+.split .pic{min-height:560px;display:grid;place-items:center;color:var(--gold);font-size:11px;letter-spacing:.28em;text-transform:uppercase;text-align:center;padding:30px}
+.split .txt{padding:90px 8%;display:flex;flex-direction:column;justify-content:center}
+.split h2{font-size:clamp(30px,3.6vw,46px);margin:14px 0 20px}
+.split p.lead{margin-bottom:28px;max-width:520px}
+.split ul{list-style:none;display:grid;gap:18px}
+.split li{padding-left:22px;position:relative}
+.split li::before{content:"\25C6";position:absolute;left:0;top:2px;color:var(--gold);font-size:10px}
+.split li h3{font-size:19px;margin-bottom:2px}
+.split li span{font-size:14px;opacity:.8}
+.s1 .pic{background:linear-gradient(135deg,var(--teal-l),var(--teal-d))}
+.s1 .txt{background:var(--paper);color:var(--ink)}.s1 h2,.s1 li h3{color:var(--teal)}.s1 p.lead{color:var(--muted)}
+.s2 .pic{background:linear-gradient(135deg,var(--teal),var(--teal-dd));order:2}
+.s2 .txt{background:var(--teal-d);color:#fff;order:1}.s2 li span,.s2 p.lead{color:#b5cfcc}
+
+/* cta band */
+.cta{background:var(--teal);color:#fff;text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;inset:0;opacity:.09;background-image:radial-gradient(var(--gold) 1px,transparent 1.6px);background-size:22px 22px}
+.cta .wrap{position:relative;max-width:760px}
+.cta h2{font-size:clamp(34px,4.6vw,60px);margin:14px 0 18px;text-transform:uppercase}
+.cta p{color:#c4dad7;margin-bottom:30px}
+
+/* showrooms */
+.show .head{text-align:center;margin-bottom:50px}
+.show h2{font-size:clamp(32px,4vw,50px);margin-top:14px;color:var(--teal)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.sr{background:#fff;border:1px solid #ddd5c1}
+.sr .map{height:220px;background:repeating-linear-gradient(45deg,var(--teal),var(--teal) 14px,var(--teal-l) 14px,var(--teal-l) 28px);display:grid;place-items:center;color:#fff;font-size:12px;letter-spacing:.26em;text-transform:uppercase}
+.sr .b{padding:28px}
+.sr h3{font-size:28px;color:var(--teal);margin-bottom:6px}
+.sr p,.sr li{font-size:15px;color:var(--muted)}
+.sr ul{list-style:none;margin:12px 0 22px}
+
+/* stories */
+.stories{background:var(--sand)}
+.stories .head{text-align:center;margin-bottom:50px}
+.stories h2{font-size:clamp(32px,4vw,50px);margin-top:14px;color:var(--teal)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.post .pic{aspect-ratio:16/10;background:linear-gradient(150deg,var(--teal-l),var(--teal-dd));margin-bottom:18px;transition:.4s}
+.post:hover .pic{filter:brightness(1.15)}
+.post small{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-d)}
+.post h3{font-size:22px;margin:6px 0 8px;color:var(--teal)}
+.post p{font-size:14px;color:var(--muted)}
+
+/* perks */
+.perks{background:var(--teal-dd);color:#fff;padding:60px 0}
+.perks .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;text-align:center}
+.perks span{color:var(--gold);font-size:22px}
+.perks h3{font-size:22px;margin:6px 0 4px}
+.perks p{font-size:14px;color:#9fc0bd}
+
+/* enquiry */
+.enq .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.enq h2{font-size:clamp(32px,4vw,46px);color:var(--teal);margin:14px 0 16px}
+.enq p{color:var(--muted)}
+form{display:grid;gap:14px}
+input,select,textarea{width:100%;padding:15px 16px;border:1px solid #cfc7b2;background:#fff;font:300 15px var(--sans);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal)}
+form .btn{background:var(--teal);border-color:var(--teal);color:#fff}
+form .btn:hover{background:var(--gold);border-color:var(--gold);color:var(--teal-dd)}
+.note{font-size:12px;color:var(--muted)}
+
+/* footer */
+footer{background:var(--teal-dd);color:#a9c4c1;padding:70px 0 28px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1.2fr;gap:50px}
+footer .logo{text-align:left;font-size:26px}
+footer h4{font-family:var(--serif);font-weight:400;color:#fff;font-size:17px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+footer ul{list-style:none;display:grid;gap:8px}
+footer ul a:hover{color:var(--gold)}
+.news{display:flex;margin-top:6px}
+.news input{background:transparent;border:1px solid rgba(214,178,110,.45);color:#fff}
+.news button{padding:0 20px;background:var(--gold);color:var(--teal-dd);border:0;font:500 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;cursor:pointer}
+footer .copy{grid-column:1/-1;text-align:center;border-top:1px solid rgba(214,178,110,.2);padding-top:24px;margin-top:10px;font-size:12px;opacity:.75}
+
+/* photo slots */
+.hero-photo{position:relative;width:70%;aspect-ratio:4/5;border-radius:999px 999px 0 0;border:1px solid rgba(214,178,110,.55);display:grid;place-items:center;background-color:rgba(255,255,255,.03)}
+.hero-photo svg{width:80%}
+.has-img{background-size:cover!important;background-position:center!important;font-size:0!important;color:transparent!important}
+.has-img>svg{display:none}
+.split .pic,.post .pic,.ig,.sr .map{position:relative}
+.edit .slot{outline:2px dashed var(--gold);outline-offset:-8px;cursor:pointer}
+.edit .slot::after{content:"+ Add photo";position:absolute;top:12px;right:12px;background:var(--gold);color:var(--teal-dd);font:500 11px var(--sans);letter-spacing:.15em;text-transform:uppercase;padding:5px 10px;z-index:5}
+.edit .sr .map::after{content:"+ Set address"}
+.dragover{filter:brightness(1.35)}
+.insta{background:var(--paper);padding-top:0}
+.insta .head{text-align:center;margin-bottom:46px}
+.insta h2{font-size:clamp(32px,4vw,50px);margin-top:14px;color:var(--teal)}
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+.ig{aspect-ratio:1;display:grid;place-items:center;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(214,178,110,.8);background:linear-gradient(150deg,var(--teal-l),var(--teal-dd))}
+.ig:nth-child(even){background:linear-gradient(150deg,var(--teal),var(--teal-dd))}
+.tb{position:fixed;left:18px;bottom:18px;z-index:60;display:flex;gap:8px;opacity:.35;transition:.3s}
+.tb:hover,.edit .tb{opacity:1}
+.tb button{font:500 11px var(--sans);letter-spacing:.18em;text-transform:uppercase;padding:12px 16px;background:var(--teal-dd);color:var(--gold);border:1px solid var(--gold);cursor:pointer}
+.tb button:hover{background:var(--gold);color:var(--teal-dd)}
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3);transition:.3s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:30px;height:30px;fill:#fff}
+@media(max-width:940px){.ig-grid{grid-template-columns:repeat(3,1fr)}}
+
+.fade{opacity:0;transform:translateY(26px);transition:opacity .9s,transform .9s}
+.fade.in{opacity:1;transform:none}
+
+@media(max-width:940px){
+  .nav{grid-template-columns:1fr auto}.nav ul{display:none}.tools{display:none}.logo{text-align:left}
+  .hero .wrap,.about .wrap,.enq .wrap,footer .wrap{grid-template-columns:1fr}
+  .hero .wrap{min-height:auto}
+  .grid4{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr}.grid2{grid-template-columns:1fr}
+  .split .wrap{grid-template-columns:1fr}.s2 .pic,.s2 .txt{order:initial}.split .pic{min-height:320px}
+  .perks .wrap{grid-template-columns:1fr}
+}
+@media(max-width:560px){section{padding:70px 0}.grid4{grid-template-columns:1fr}.promo{position:static;margin-top:10px}}
+</style>
+</head>
+<body>
+
+<div class="ribbon">DESIGN CONCEPT PREVIEW &middot; Dark teal theme &middot; Placeholder content, prepared as a proposal</div>
+
+<svg width="0" height="0" style="position:absolute"><defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4dfa6"/><stop offset=".5" stop-color="#d6b26e"/><stop offset="1" stop-color="#8f6a28"/></linearGradient>
+  <symbol id="necklace" viewBox="0 0 200 200">
+    <path d="M20 40 Q100 170 180 40" fill="none" stroke="url(#g)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M38 62 Q100 150 162 62" fill="none" stroke="url(#g)" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <path d="M100 118 L82 150 L100 182 L118 150 Z" fill="url(#g)"/><circle cx="100" cy="150" r="9" fill="#0f4a4b"/>
+  </symbol>
+  <symbol id="ring" viewBox="0 0 200 200">
+    <circle cx="100" cy="120" r="48" fill="none" stroke="url(#g)" stroke-width="10"/>
+    <path d="M78 66 L100 34 L122 66 L100 80 Z" fill="#e8f4f2" stroke="url(#g)" stroke-width="4"/><path d="M78 66 L122 66" stroke="url(#g)" stroke-width="4"/>
+  </symbol>
+  <symbol id="earring" viewBox="0 0 200 200">
+    <circle cx="100" cy="36" r="9" fill="url(#g)"/><path d="M100 45 L100 80" stroke="url(#g)" stroke-width="4"/>
+    <path d="M100 80 C60 90 52 140 100 178 C148 140 140 90 100 80 Z" fill="none" stroke="url(#g)" stroke-width="5"/>
+    <circle cx="100" cy="125" r="13" fill="#1b6a6a"/><circle cx="100" cy="125" r="5" fill="url(#g)"/>
+  </symbol>
+  <symbol id="bangle" viewBox="0 0 200 200">
+    <ellipse cx="100" cy="110" rx="74" ry="56" fill="none" stroke="url(#g)" stroke-width="12"/>
+    <ellipse cx="100" cy="110" rx="56" ry="38" fill="none" stroke="url(#g)" stroke-width="3" stroke-dasharray="3 8"/>
+  </symbol>
+</defs></svg>
+
+<header>
+  <div class="wrap nav">
+    <ul>
+      <li><a href="#top">Home</a></li><li><a href="#arrivals">Collections</a></li>
+      <li><a href="#showrooms">Showrooms</a></li><li><a href="#enquire">Contact</a></li>
+    </ul>
+    <a href="#top" class="logo">Vinayka<small>Jewellery &middot; Jaipur</small></a>
+    <div class="tools"><span>Wishlist <b>3</b></span><span>Account</span></div>
+  </div>
+</header>
+
+<section class="hero" id="top" style="padding:0">
+  <div class="wrap">
+    <div>
+      <span class="kicker l">Simple &amp; Elegant</span>
+      <h1>Crafted in <em>Jaipur.</em> Worn for a lifetime.</h1>
+      <a href="#arrivals" class="btn">Shop This Collection</a>
+    </div>
+    <div class="hero-art">
+      <div class="ring-bg"></div><div class="ring-bg b"></div>
+      <div class="hero-photo"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#necklace"/></svg></div>
+      <div class="promo"><b>Festive Offers</b><span>Ask in showroom</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="frames fade"><div class="frame a">Craftsmen photo</div><div class="frame b">Showroom photo</div></div>
+    <div class="fade">
+      <span class="kicker">About Us</span>
+      <h2>Exploring the beauty of adornments</h2>
+      <p>What began as a small atelier in Johri Bazaar in the 1970s has grown into one of Jaipur's most trusted names in fine jewellery. Polki, gold, diamond and silver, made by skilled artisans and shown at our showroom on MI Road.</p>
+      <a href="#story" class="btn out">Read More</a>
+    </div>
+  </div>
+</section>
+
+<section class="arrivals" id="arrivals">
+  <div class="wrap">
+    <div class="head fade"><span class="kicker">New Arrivals</span><h2>Brilliant design &amp; unique elegance</h2></div>
+    <div class="grid4">
+      <a class="prod fade" href="#enquire"><div class="img"><svg><use href="#bangle"/></svg><div class="act">Enquire</div></div><h3>Gold &amp; Diamond Pendant Set</h3><p>Price on request</p></a>
+      <a class="prod fade" href="#enquire"><div class="img"><svg><use href="#earring"/></svg><div class="act">Enquire</div></div><h3>Long Polki Necklace</h3><p>Price on request</p></a>
+      <a class="prod fade" href="#enquire"><div class="img"><svg><use href="#ring"/></svg><div class="act">Enquire</div></div><h3>Layered Pearl Haar</h3><p>Price on request</p></a>
+      <a class="prod fade" href="#enquire"><div class="img"><svg><use href="#necklace"/></svg><div class="act">Enquire</div></div><h3>Bridal Necklace Set</h3><p>Price on request</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="split s1" id="story">
+  <div class="wrap">
+    <div class="pic">Feature photo<br>Gold collection</div>
+    <div class="txt fade">
+      <span class="kicker">Our Craft</span>
+      <h2>The art of fine gold</h2>
+      <p class="lead">Every piece is shaped with patience and precision. Replace this paragraph with the brand's real craft story.</p>
+      <ul>
+        <li><h3>Hallmarked purity</h3><span>Certified gold that lasts through generations.</span></li>
+        <li><h3>Handcrafted precision</h3><span>Intricate detailing by experienced karigars.</span></li>
+        <li><h3>Made to your vision</h3><span>Custom and bridal orders, start to finish.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="split s2">
+  <div class="wrap">
+    <div class="pic">Feature photo<br>Kundan and polki</div>
+    <div class="txt fade">
+      <span class="kicker l">Signature Collection</span>
+      <h2>Radiance, inherited from Jaipur</h2>
+      <p class="lead">Kundan, polki and gemstone work that catches the light and the room. A second story block for a hero collection.</p>
+      <ul>
+        <li><h3 style="color:#fff">Illuminated finish</h3><span>Polished to reflect every flicker of light.</span></li>
+        <li><h3 style="color:#fff">Sculpted elegance</h3><span>Designs that sit beautifully on every occasion.</span></li>
+        <li><h3 style="color:#fff">Comfort, all day</h3><span>Crafted to be worn, not just admired.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap fade">
+    <span class="kicker l">Bridal &amp; Custom</span>
+    <h2>Chic petal perfection</h2>
+    <p>Planning a wedding or a gift? Share what you have in mind and the showroom team will curate options for you.</p>
+    <a href="#enquire" class="btn">Book a Consultation</a>
+  </div>
+</section>
+
+<section class="show" id="showrooms">
+  <div class="wrap">
+    <div class="head fade"><span class="kicker">Visit Us</span><h2>Two showrooms in Jaipur</h2></div>
+    <div class="grid2">
+      <div class="sr fade"><div class="map">Google Map: Showroom 1</div><div class="b"><h3>MI Road Showroom</h3><p>Mirza Ismail Road, Jayanti Market, New Colony, Jaipur</p><ul><li>Open: [timings]</li><li>Phone: +91 95097 57411</li></ul><a class="btn out" href="#enquire">Get Directions</a></div></div>
+      <div class="sr fade"><div class="map">Google Map: Showroom 2</div><div class="b"><h3>Second Showroom</h3><p>[Address, area, Jaipur]</p><ul><li>Open: [timings]</li><li>Phone: +91 95097 57411</li></ul><a class="btn out" href="#enquire">Get Directions</a></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="stories">
+  <div class="wrap">
+    <div class="head fade"><span class="kicker">Our Journal</span><h2>Check out our jewellery stories</h2></div>
+    <div class="grid3">
+      <a class="post fade" href="#"><div class="pic"></div><small>Guide</small><h3>How to choose your bridal set</h3><p>Sample article. Good for Google search and for showing expertise.</p></a>
+      <a class="post fade" href="#"><div class="pic"></div><small>Care</small><h3>Caring for kundan and polki</h3><p>Sample article. Useful tips that keep customers coming back.</p></a>
+      <a class="post fade" href="#"><div class="pic"></div><small>Trends</small><h3>Festive jewellery trends</h3><p>Sample article. A place to feature new Instagram collections.</p></a>
+    </div>
+  </div>
+</section>
+
+<div class="perks">
+  <div class="wrap">
+    <div><span>&#10022;</span><h3>Hallmarked Quality</h3><p>Purity you can trust</p></div>
+    <div><span>&#10022;</span><h3>Easy Enquiry</h3><p>Reply on WhatsApp</p></div>
+    <div><span>&#10022;</span><h3>After-care Support</h3><p>We are here after the sale</p></div>
+  </div>
+</div>
+
+<section class="insta">
+  <div class="wrap">
+    <div class="head fade"><span class="kicker">Follow Along</span><h2>Straight from our Instagram</h2></div>
+    <div class="ig-grid fade"><div class="ig">Post</div><div class="ig">Post</div><div class="ig">Post</div><div class="ig">Post</div><div class="ig">Post</div><div class="ig">Post</div></div>
+  </div>
+</section>
+
+<section class="enq" id="enquire">
+  <div class="wrap">
+    <div class="fade"><span class="kicker">Contact</span><h2>Tell us what you are looking for</h2><p>Share the occasion and budget. This form opens a pre-filled WhatsApp message so the enquiry lands directly with the showroom team.</p></div>
+    <form id="f" class="fade">
+      <input id="n" placeholder="Your name" required>
+      <select id="c"><option>Bridal</option><option>Kundan &amp; Polki</option><option>Gold</option><option>Diamond</option><option>Gemstone</option><option>Silver &amp; Everyday</option><option>Custom design</option></select>
+      <input id="b" placeholder="Approximate budget (optional)">
+      <textarea id="m" rows="3" placeholder="Occasion, date, anything else"></textarea>
+      <button class="btn" type="submit">Send on WhatsApp</button>
+      <span class="note">Opens WhatsApp with the showroom number.</span>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><a href="#top" class="logo">Vinayka<small>Jewellery &middot; Jaipur</small></a><p style="margin-top:18px;max-width:340px">Jewellery is more than an accessory. It is a celebration of moments. Placeholder brand line.</p></div>
+    <div><h4>Quick Menu</h4><ul><li><a href="#top">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#arrivals">Collections</a></li><li><a href="#showrooms">Showrooms</a></li><li><a href="#enquire">Contact</a></li></ul></div>
+    <div><h4>Join Our Newsletter</h4><div class="news"><input placeholder="Your email"><button>Subscribe</button></div><p style="margin-top:18px">Instagram &middot; WhatsApp &middot; Google Maps</p></div>
+    <div class="copy">Website concept prepared as a proposal. Content and images are placeholders.</div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/919509757411" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.4 1.4.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.1z"/></svg></a>
+
+<div class="tb"><button id="editBtn">Edit photos</button><button id="resetBtn">Reset</button></div>
+
+<script>
+(function(){
+  var SLOTS=[['.hero-photo','hero'],['.frame','about'],['.prod .img','prod'],['.split .pic','split'],['.post .pic','post'],['.ig','ig'],['.sr .map','map']];
+  var IMG='https://img1.wsimg.com/isteam/ip/8280efe5-1e8c-4813-ad70-2855c5a0ac39/';
+  var P1='18-02-2026%20Vinayaka%20Jewellers4039.jpeg',P2='18-02-2026%20Vinayaka%20Jewellers4582.jpeg',P3='18-02-2026%20Vinayaka%20Jewellers4472.jpeg',P4='18-02-2026%20Vinayaka%20Jewellers3829.jpeg';
+  var H1='KC_08390-af00ca2.jpeg',H2='KC_07858.jpeg',H3='KC_08069.jpeg',H4='KC_08273.jpeg',H5='KC_08137.jpeg',H6='KC_08075.jpeg',H7='KC_08100.jpeg';
+  var DEF={hero0:P1,about0:P2,about1:P4,prod0:P3,prod1:H4,prod2:H7,prod3:H6,split0:H1,split1:H2,post0:H5,post1:H3,post2:P2,ig0:P1,ig1:P2,ig2:P3,ig3:P4,ig4:H4,ig5:H1};
+  var MAPS={map0:'Vinayka Jewellery, Mirza Ismail Road, Jayanti Market, New Colony, Jaipur, Rajasthan'};
+  var store={
+    get:function(k){try{return localStorage.getItem('vj_'+k)}catch(e){return null}},
+    set:function(k,v){try{localStorage.setItem('vj_'+k,v)}catch(e){}},
+    clear:function(){try{Object.keys(localStorage).filter(function(k){return k.indexOf('vj_')===0}).forEach(function(k){localStorage.removeItem(k)})}catch(e){}}
+  };
+  var inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.style.display='none';document.body.appendChild(inp);
+  var target=null;
+  function isMap(el){return el.classList.contains('map')}
+  function setImg(el,url){el.style.backgroundImage='url("'+url+'")';el.classList.add('has-img')}
+  function setMap(el,addr){el.innerHTML='<iframe title="map" loading="lazy" style="border:0;width:100%;height:100%" src="https://www.google.com/maps?q='+encodeURIComponent(addr)+'&output=embed"></iframe>';el.classList.add('has-img')}
+  function shrink(file,cb){
+    var r=new FileReader();
+    r.onload=function(){var im=new Image();im.onload=function(){
+      var s=Math.min(1,1200/Math.max(im.width,im.height)),c=document.createElement('canvas');
+      c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);
+      cb(c.toDataURL('image/jpeg',.82));
+    };im.src=r.result};
+    r.readAsDataURL(file);
+  }
+  function apply(el,file){shrink(file,function(url){setImg(el,url);store.set(el.dataset.key,url)})}
+
+  SLOTS.forEach(function(p){
+    document.querySelectorAll(p[0]).forEach(function(el,i){
+      el.dataset.key=p[1]+i;el.classList.add('slot');
+      var saved=store.get(el.dataset.key);
+      if(isMap(el)){ var ad=saved||MAPS[el.dataset.key]; if(ad) setMap(el,ad); return; }
+      if(saved){ setImg(el,saved); }
+      else if(DEF[el.dataset.key]){ var u=IMG+DEF[el.dataset.key]+'/:/rs=w:'+(el.dataset.key==='hero0'?900:700)+',m'; var im=new Image(); im.onload=function(){setImg(el,u)}; im.src=u; }
+      el.addEventListener('dragover',function(e){e.preventDefault();el.classList.add('dragover')});
+      el.addEventListener('dragleave',function(){el.classList.remove('dragover')});
+      el.addEventListener('drop',function(e){e.preventDefault();el.classList.remove('dragover');if(e.dataTransfer.files[0])apply(el,e.dataTransfer.files[0])});
+    });
+  });
+
+  document.addEventListener('click',function(e){
+    if(!document.body.classList.contains('edit'))return;
+    var el=e.target.closest('.slot');if(!el)return;
+    e.preventDefault();
+    if(isMap(el)){
+      var a=prompt('Showroom address (it will show a live Google Map):');
+      if(a){setMap(el,a);store.set(el.dataset.key,a)}
+      return;
+    }
+    target=el;inp.value='';inp.click();
+  },true);
+  inp.addEventListener('change',function(){if(target&&inp.files[0])apply(target,inp.files[0])});
+
+  var eb=document.getElementById('editBtn');
+  eb.addEventListener('click',function(){
+    var on=document.body.classList.toggle('edit');
+    eb.textContent=on?'Done':'Edit photos';
+  });
+  document.getElementById('resetBtn').addEventListener('click',function(){
+    if(confirm('Remove all photos you added?')){store.clear();location.reload()}
+  });
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.fade').forEach(function(el){io.observe(el)});
+  document.getElementById('f').addEventListener('submit',function(e){
+    e.preventDefault();
+    var t="Hello, I'm "+n.value+". I'm interested in: "+c.value+"."+(b.value?" Budget: "+b.value+".":"")+(m.value?" "+m.value:"");
+    window.open('https://wa.me/919509757411?text='+encodeURIComponent(t),'_blank');
+  });
+})();
+</script>
+</body>
+</html>
